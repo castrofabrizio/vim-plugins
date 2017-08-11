@@ -1,0 +1,9 @@
+File name omni-completion
+=========================
+
+ctrl-x ctrl-f
+
+Open file under cursor in new tab
+=================================
+
+ctrl-w gf
