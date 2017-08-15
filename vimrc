@@ -19,6 +19,8 @@ autocmd BufWinLeave * call clearmatches()
 map  <F2> :NERDTreeToggle<CR>
 nmap <F8> :TagbarToggle<CR>
 
+set number
+
 "-------------------------------------------------------------------------------
 " OmniCppCompletion plugin
 "-------------------------------------------------------------------------------
