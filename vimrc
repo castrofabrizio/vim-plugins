@@ -72,6 +72,7 @@ let OmniCpp_SelectFirstItem = 0
 
 let cscope_file=expand($BUILD_DIRECTORY)."/cscope.out"
 let cscope_pref=expand($BUILD_DIRECTORY)
+let tags=expand($BUILD_DIRECTORY)."/tags"
 if !empty(cscope_file) && filereadable(cscope_file)
 	exe "cs add" cscope_file cscope_pref
 endif
