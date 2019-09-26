@@ -69,3 +69,9 @@ let OmniCpp_MayCompleteArrow = 1
 let OmniCpp_MayCompleteScope = 0
 " don't select first item in pop-up menu
 let OmniCpp_SelectFirstItem = 0
+
+let cscope_file=expand($BUILD_DIRECTORY)."/cscope.out"
+let cscope_pref=expand($BUILD_DIRECTORY)
+if !empty(cscope_file) && filereadable(cscope_file)
+	exe "cs add" cscope_file cscope_pref
+endif
