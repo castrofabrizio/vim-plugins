@@ -6,3 +6,7 @@ echo "Use shift+F10 to open the menu on terminator"
 if [ -n "${MACHINE}" -a -f "${HOME}/kernel-scripts/select-prompt.sh" ]; then
 	source "${HOME}/kernel-scripts/select-prompt.sh"
 fi
+
+alias issh='ssh -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no"'
+alias iscp='scp -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no"'
+alias lsize='ls -Slhr'
