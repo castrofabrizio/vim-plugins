@@ -10,3 +10,5 @@ fi
 alias issh='ssh -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no"'
 alias iscp='scp -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no"'
 alias lsize='ls -Slhr'
+
+set -o vi
